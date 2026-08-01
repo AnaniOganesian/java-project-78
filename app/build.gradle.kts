@@ -2,6 +2,14 @@ plugins {
     application
     checkstyle
     jacoco
+    id("org.sonarqube") version "7.3.1.8318"
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "AnaniOganesian_java-project-78")
+        property("sonar.organization", "ananioganesian")
+    }
 }
 
 application {
